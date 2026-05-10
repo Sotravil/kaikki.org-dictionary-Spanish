@@ -26,7 +26,8 @@ git config user.email "your.email@example.com"
 ```
 
 If your files are in another local folder, open PowerShell in the repo root and
-copy them in first:
+copy only the files you want to upload (replace `<source-directory-path>` with
+your real folder path):
 
 ```powershell
 # example: C:\Users\YourName\Documents\kaikki.org-dictionary-Spanish
@@ -34,7 +35,7 @@ Copy-Item "<source-directory-path>\*" `
   "." -Recurse -Force
 ```
 
-If `dictionary_1_spanish.db` is larger than 100 MB, use Git LFS:
+If `dictionary_1_spanish.db` is 100 MB or larger, use Git LFS:
 
 ```bash
 git lfs install   # run once per machine
