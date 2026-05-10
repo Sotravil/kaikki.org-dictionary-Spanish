@@ -41,10 +41,11 @@ Then review what changed:
 git status
 ```
 
-If `dictionary_1_spanish.db` is 100 MB or larger, use Git LFS:
+If `dictionary_1_spanish.db` is 100 MB or larger, set up Git LFS before running
+`git add .`:
 
 ```bash
-git lfs install   # run once per user account (or after Git reinstall)
+git lfs install   # typically needed once per user account
 git lfs track "*.db"
 git add .gitattributes *.db
 git commit -m "Add dictionary database"
