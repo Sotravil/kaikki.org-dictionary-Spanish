@@ -4,6 +4,23 @@ This folder contains a self-contained Spanish dictionary database used by the
 bot's Spanish-context brain (grammar, semantics, theology-aware reasoning, and
 future multi-dictionary lookup).
 
+## Upload this folder to GitHub (quick commit guide)
+
+From this repository root:
+
+```bash
+git add .
+git commit -m "Add/update Spanish dictionary folder files"
+git push origin <your-branch>
+```
+
+If this is your first commit in a new clone, set your identity once:
+
+```bash
+git config user.name "Your Name"
+git config user.email "you@example.com"
+```
+
 ## Files in this folder
 
 | File | Role | Generated? |
