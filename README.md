@@ -6,12 +6,14 @@ future multi-dictionary lookup).
 
 ## Upload this folder to GitHub (quick commit guide)
 
-From this repository root:
+To commit directly to `main` from this repository root:
 
 ```bash
+git checkout main
+git pull origin main
 git add .
 git commit -m "Add/update Spanish dictionary folder files"
-git push origin <branch-name>
+git push origin main
 ```
 
 If this is your first commit in a new clone, set your identity once
@@ -20,6 +22,22 @@ If this is your first commit in a new clone, set your identity once
 ```bash
 git config user.name "Your Name"
 git config user.email "your.email@example.com"
+```
+
+If your files are in another local folder, open PowerShell in the repo root and
+copy them in first:
+
+```powershell
+Copy-Item "D:\projectos\kaikki.org-dictionary-Spanish\*" `
+  "." -Recurse -Force
+```
+
+If `dictionary_1_spanish.db` is larger than 100 MB, use Git LFS before `git add`:
+
+```bash
+git lfs install
+git lfs track "*.db"
+git add .gitattributes dictionary_1_spanish.db
 ```
 
 ## Files in this folder
