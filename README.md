@@ -6,7 +6,8 @@ future multi-dictionary lookup).
 
 ## Upload this folder to GitHub (quick commit guide)
 
-To commit directly to `main` from this repository root:
+To commit directly to `main` from this repository root (when `main` is not
+protected):
 
 ```bash
 git checkout main
