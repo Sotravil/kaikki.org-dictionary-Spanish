@@ -28,6 +28,7 @@ If your files are in another local folder, open PowerShell in the repo root and
 copy them in first:
 
 ```powershell
+# example: C:\Users\YourName\Documents\kaikki.org-dictionary-Spanish
 Copy-Item "<source-directory-path>\*" `
   "." -Recurse -Force
 ```
@@ -40,6 +41,8 @@ git lfs track "*.db"
 git add .gitattributes
 git commit -m "Track .db files with Git LFS"
 git add dictionary_1_spanish.db
+git commit -m "Add dictionary database"
+git push origin main
 ```
 
 If `main` is protected in your repo settings, push to a branch and open a PR.
