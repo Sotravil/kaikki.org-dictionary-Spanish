@@ -18,7 +18,7 @@ If this is your first commit in a new clone, set your identity once:
 
 ```bash
 git config user.name "Your Name"
-git config user.email "you@example.com"
+git config user.email "your.email@example.com"
 ```
 
 ## Files in this folder
