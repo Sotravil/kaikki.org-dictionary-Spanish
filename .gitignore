@@ -1,0 +1,20 @@
+
+# Local database files - do not commit
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.part*
+db_parts/
+database_upload/
+
+# Local database files - do not commit
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.part*
+db_parts/
+database_upload/
