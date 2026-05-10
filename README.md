@@ -44,7 +44,7 @@ git status
 If `dictionary_1_spanish.db` is 100 MB or larger, use Git LFS:
 
 ```bash
-git lfs install   # run once per machine
+git lfs install   # run once per user account (or after Git reinstall)
 git lfs track "*.db"
 git add .gitattributes *.db
 git commit -m "Add dictionary database"
