@@ -14,7 +14,8 @@ git commit -m "Add/update Spanish dictionary folder files"
 git push origin <branch-name>
 ```
 
-If this is your first commit in a new clone, set your identity once:
+If this is your first commit in a new clone, set your identity once
+(replace the values with your real name/email used on GitHub):
 
 ```bash
 git config user.name "Your Name"
