@@ -38,9 +38,7 @@ If `dictionary_1_spanish.db` is larger than 100 MB, use Git LFS:
 ```bash
 git lfs install   # run once per machine
 git lfs track "*.db"
-git add .gitattributes
-git commit -m "Track .db files with Git LFS"
-git add dictionary_1_spanish.db
+git add .gitattributes dictionary_1_spanish.db
 git commit -m "Add dictionary database"
 git push origin main
 ```
