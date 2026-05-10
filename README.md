@@ -35,12 +35,18 @@ Copy-Item "<source-directory-path>\*" `
   "." -Recurse -Force
 ```
 
+Then review what changed:
+
+```bash
+git status
+```
+
 If `dictionary_1_spanish.db` is 100 MB or larger, use Git LFS:
 
 ```bash
 git lfs install   # run once per machine
 git lfs track "*.db"
-git add .gitattributes dictionary_1_spanish.db
+git add .gitattributes *.db
 git commit -m "Add dictionary database"
 git push origin main
 ```
