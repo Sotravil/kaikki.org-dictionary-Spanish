@@ -11,7 +11,7 @@ From this repository root:
 ```bash
 git add .
 git commit -m "Add/update Spanish dictionary folder files"
-git push origin <your-branch>
+git push origin <branch-name>
 ```
 
 If this is your first commit in a new clone, set your identity once:
