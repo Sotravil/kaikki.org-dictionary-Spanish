@@ -1,0 +1,23 @@
+# ── Generated / transient files ─────────────────────────────────────────────
+# These are produced by build_dictionary_db.py and should never be committed.
+
+# SQLite database and its WAL side-car files
+*.db
+*.db-wal
+*.db-shm
+
+# Build log and statistics produced during each import run
+import_log.txt
+import_report.json
+
+# ── OS / editor noise ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
