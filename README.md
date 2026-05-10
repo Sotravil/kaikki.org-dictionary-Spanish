@@ -9,6 +9,9 @@ future multi-dictionary lookup).
 To commit directly to `main` from this repository root (when `main` is not
 protected):
 
+If `dictionary_1_spanish.db` is 100 MB or larger, run the Git LFS block below
+first, then continue with these commands.
+
 ```bash
 git checkout main
 git pull origin main
