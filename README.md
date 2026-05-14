@@ -4,6 +4,59 @@ This folder contains a self-contained Spanish dictionary database used by the
 bot's Spanish-context brain (grammar, semantics, theology-aware reasoning, and
 future multi-dictionary lookup).
 
+## Upload this folder to GitHub (quick commit guide)
+
+To commit directly to `main` from this repository root (when `main` is not
+protected):
+
+If `dictionary_1_spanish.db` is 100 MB or larger, run the Git LFS block below
+first, then continue with these commands.
+
+```bash
+git checkout main
+git pull origin main
+git add .
+git commit -m "Add/update Spanish dictionary folder files"
+git push origin main
+```
+
+If this is your first commit in a new clone, set your identity once
+(replace the values with your real name/email used on GitHub):
+
+```bash
+git config user.name "Your Name"
+git config user.email "your.email@example.com"
+```
+
+If your files are in another local folder, open PowerShell in the repo root and
+copy only the files you want to upload (replace `<source-directory-path>` with
+your real folder path):
+
+```powershell
+# example: C:\Users\YourName\Documents\kaikki.org-dictionary-Spanish
+Copy-Item "<source-directory-path>\*" `
+  "." -Recurse -Force
+```
+
+Then review what changed:
+
+```bash
+git status
+```
+
+If `dictionary_1_spanish.db` is 100 MB or larger, set up Git LFS before running
+`git add .`:
+
+```bash
+git lfs install   # typically needed once per user account
+git lfs track "*.db"
+git add .gitattributes *.db
+git commit -m "Add dictionary database"
+git push origin main
+```
+
+If `main` is protected in your repo settings, push to a branch and open a PR.
+
 ## Files in this folder
 
 | File | Role | Generated? |
